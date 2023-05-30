@@ -1,13 +1,13 @@
-# TRABALHO INDIVIDUAL - MÓDULO 2 - RESÍLIA / IFOOD 2023
+# Projeto Individual 1 (M2) - MÓDULO 2 - RESÍLIA / IFOOD 2023
  
  Edineudo Sampaio - SA
 
 
-### Avaliação de Candidatos
+# Avaliação de Candidatos
 
 Este é um programa simples para avaliar candidatos com base em notas atribuídas a eles. O programa solicita notas para diferentes critérios de avaliação e, em seguida, determina quais candidatos atendem aos critérios e os exibe como candidatos aprovados.
 
-### Funcionalidades
+## Funcionalidades
 
 O programa possui as seguintes funcionalidades:
 
@@ -17,7 +17,7 @@ O programa possui as seguintes funcionalidades:
 4. Função 'obterNota(rotulo)': Solicita uma nota ao usuário para um determinado critério.
 5. Função 'obterResposta()': Solicita uma resposta (s/n) ao usuário.
 
-### Fluxo do Programa
+## Fluxo do Programa
 
 O programa segue o seguinte fluxo:
 
@@ -34,14 +34,14 @@ O programa segue o seguinte fluxo:
    - 3.1_ Exibe a lista de candidatos com suas respectivas notas.
    - 3.1_ Determina quais candidatos atendem a todos os critérios e os exibe como candidatos aprovados.
 
-### Como Usar o Programa
+## Como Usar o Programa
 
 1. Execute o programa em um ambiente Python.
 2. Siga as instruções para inserir as notas dos candidatos e os critérios de avaliação.
 3. Após a inserção, o programa exibirá a lista de candidatos e os candidatos aprovados.
 
-### Considerações Finais
+## Considerações Finais
 
 Este programa é uma ferramenta simples para avaliar candidatos com base em critérios de avaliação. Ele pode ser facilmente adaptado para adicionar novos critérios ou funcionalidades, se necessário. Sinta-se à vontade para utilizar e modificar este código de acordo com suas necessidades.
 
-°2023 - Edineudo Sampaio
+°###2023 - Edineudo Sampaio

@@ -33,7 +33,8 @@ def aprovados(criterios, candidato):
 def obterNota(rotulo):
     while True:
         try:
-            nota = int(input(f'Digite a nota do Canditato(a) abaixo: {rotulo}: '))
+            print('________________________________________________________________________________________________________________________________________')
+            nota = int(input(f'Digite a nota do Canditato(a) para: {rotulo}: '))
             return nota
         except ValueError:
             print('\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Atenção !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
@@ -45,6 +46,7 @@ def obterResposta():
     while True:
         print('\n\n_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_\n')
         resposta = input('Deseja adicionar mais algum candidato à lista? ["s" para "sim" ou "n" para "não"]: ').lower()
+        print('\n________________________________________________________________________________________________________________________________________\n\n')
         if resposta == 's' or resposta == 'n':
             return resposta
         else:
@@ -59,6 +61,7 @@ pos = 1
 # Início do programa
 
 # Exibe o título para inserção das notas
+print('\n________________________________________________________________________________________________________________________________________\n')
 titulo('Insira as notas do Candidato abaixo:')
 
 while True:
@@ -75,7 +78,9 @@ while True:
     pos += 1
 
 # Exibe o título para inserção dos critérios
+print('\n________________________________________________________________________________________________________________________________________\n')
 titulo('Quais são os Critérios:')
+print('\n________________________________________________________________________________________________________________________________________\n')
 
 # Obtém os critérios de avaliação
 criterios = [obterNota(rotulo) for rotulo in ['e_ Entrevista', 't_ Teste Teórico', 'p_ Teste Prático', 's_ Soft Skill']]

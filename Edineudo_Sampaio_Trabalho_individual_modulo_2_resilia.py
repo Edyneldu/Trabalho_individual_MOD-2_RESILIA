@@ -7,7 +7,6 @@ def listaCandidato(candidato):
     titulo('Lista de Candidatos:')
     for i, c in enumerate(candidato):
         print(f'{i+1}° Candidato: e{c[0]}_t{c[1]}_p{c[2]}_s{c[3]}')
-        print('\n________________________________________________________________________________________________________________________________________\n')
 # Função para exibir os candidatos aprovados
 def aprovados(criterios, candidato):
     # Lista para armazenar os candidatos aprovados
@@ -26,13 +25,12 @@ def aprovados(criterios, candidato):
 def obterNota(rotulo):
     while True:
         try:
-            print('________________________________________________________________________________________________________________________________________')
             nota = int(input(f'Digite a nota do Canditato para: {rotulo}: '))
             return nota
         except ValueError:
             print('\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Atenção !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
             print('Por favor, digite um número válido!!!')
-            print('\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Warming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
+            print('\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Warming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
 # Função para obter a resposta do usuário (s/n)
 def obterResposta():
     while True:
@@ -43,7 +41,7 @@ def obterResposta():
         else:
             print('\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Atenção !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
             print('Por favor, digite uma resposta válida ("s" para "sim" ou "n" para "não")!!!')
-            print('\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! WarminG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
+            print('\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! WarminG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
 # Lista para armazenar os candidatos
 candidato = []
 pos = 1

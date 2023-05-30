@@ -36,18 +36,19 @@ def obterNota(rotulo):
             nota = int(input(f'Digite a nota do Canditato(a) abaixo: {rotulo}: '))
             return nota
         except ValueError:
-            print('\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Atenção !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
+            print('\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Atenção !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
             print('Por favor, digite um número válido!!!')
             print('\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Warming !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
 
 # Função para obter a resposta do usuário (s/n)
 def obterResposta():
     while True:
+        print('\n\n_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_\n')
         resposta = input('Deseja adicionar mais algum candidato à lista? ["s" para "sim" ou "n" para "não"]: ').lower()
         if resposta == 's' or resposta == 'n':
             return resposta
         else:
-            print('\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Atenção !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
+            print('\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Atenção !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
             print('Por favor, digite uma resposta válida ("s" para "sim" ou "n" para "não")!!!')
             print('\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! WarminG !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
 
@@ -58,7 +59,7 @@ pos = 1
 # Início do programa
 
 # Exibe o título para inserção das notas
-titulo('Insira as notas')
+titulo('Insira as notas do Candidato abaixo:')
 
 while True:
     print(f'{pos}° Candidato:')

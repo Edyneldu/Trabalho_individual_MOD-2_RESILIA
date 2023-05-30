@@ -78,9 +78,7 @@ while True:
     pos += 1
 
 # Exibe o título para inserção dos critérios
-print('\n________________________________________________________________________________________________________________________________________\n')
 titulo('Quais são os Critérios:')
-print('\n________________________________________________________________________________________________________________________________________\n')
 
 # Obtém os critérios de avaliação
 criterios = [obterNota(rotulo) for rotulo in ['e_ Entrevista', 't_ Teste Teórico', 'p_ Teste Prático', 's_ Soft Skill']]

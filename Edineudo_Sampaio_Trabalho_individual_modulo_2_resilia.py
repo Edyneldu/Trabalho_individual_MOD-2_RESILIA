@@ -1,20 +1,18 @@
 # Função para exibir um título
 def titulo(msg):
-    print('\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n')
+    print('\n')
     print(msg)
-    print('\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n')
 
 # Função para exibir a lista de candidatos
 def listaCandidato(candidato):
     titulo('Lista de Candidatos:')
     for i, c in enumerate(candidato):
-        print('\n________________________________________________________________________________________________________________________________________\n')
         print(f'{i+1}° Candidato: e{c[0]}_t{c[1]}_p{c[2]}_s{c[3]}')
         print('\n________________________________________________________________________________________________________________________________________\n')
 # Função para exibir os candidatos aprovados
 def aprovados(criterios, candidato):
     # Lista para armazenar os candidatos aprovados
-    listaAprovados = [f'{j+1}ª Candidato e_{c[0]}_t{c[1]}_p{c[2]}_s{c[3]}' for j, c in enumerate(candidato) if all(0 < criterios[i] <= c[i] for i in range(4))]
+    listaAprovados = [f'{j+1}° Candidato e_{c[0]}_t{c[1]}_p{c[2]}_s{c[3]}' for j, c in enumerate(candidato) if all(0 < criterios[i] <= c[i] for i in range(4))]
 
     titulo('Aprovados:')
     # Verifica se não há candidatos aprovados
@@ -24,17 +22,15 @@ def aprovados(criterios, candidato):
         print('\n_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX_\n')
     else:
         # Exibe os candidatos aprovados
-        print('\n________________________________________________________________________________________________________________________________________\n')
         for ap in listaAprovados:
             print(f'{ap[:13]:.<18}{ap[13:]}')
-            print('\n________________________________________________________________________________________________________________________________________\n')
 
 # Função para obter uma nota digitada pelo usuário
 def obterNota(rotulo):
     while True:
         try:
             print('________________________________________________________________________________________________________________________________________')
-            nota = int(input(f'Digite a nota do Canditato(a) para: {rotulo}: '))
+            nota = int(input(f'Digite a nota do Canditato para: {rotulo}: '))
             return nota
         except ValueError:
             print('\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Atenção !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')
@@ -46,7 +42,6 @@ def obterResposta():
     while True:
         print('\n\n_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_?_\n')
         resposta = input('Deseja adicionar mais algum candidato à lista? ["s" para "sim" ou "n" para "não"]: ').lower()
-        print('\n________________________________________________________________________________________________________________________________________\n\n')
         if resposta == 's' or resposta == 'n':
             return resposta
         else:
@@ -59,9 +54,8 @@ candidato = []
 pos = 1
 
 # Início do programa
-
+print('\n________________________________________________ Início _______________________________________________________________________________\n')
 # Exibe o título para inserção das notas
-print('\n________________________________________________________________________________________________________________________________________\n')
 titulo('Insira as notas do Candidato abaixo:')
 
 while True:
@@ -84,7 +78,6 @@ titulo('Quais são os Critérios:')
 criterios = [obterNota(rotulo) for rotulo in ['e_ Entrevista', 't_ Teste Teórico', 'p_ Teste Prático', 's_ Soft Skill']]
 
 # Exibe a lista de candidatos
-print('\n________________________________________________________________________________________________________________________________________\n')
 listaCandidato(candidato)
 
 # Verifica e exibe os candidatos aprovados

@@ -25,7 +25,7 @@ def aprovados(criterios, candidato):
         print('\n_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX_\n')
     else:
         # Exibe os candidatos aprovados
-            print('\n________________________________________________________________________________________________________________________________________\n')
+        print('\n________________________________________________________________________________________________________________________________________\n')
         for ap in listaAprovados:
             print('\n________________________________________________________________________________________________________________________________________\n')
 

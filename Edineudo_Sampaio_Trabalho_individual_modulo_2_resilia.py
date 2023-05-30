@@ -20,10 +20,12 @@ def aprovados(criterios, candidato):
     titulo('Aprovados:')
     # Verifica se não há candidatos aprovados
     if len(listaAprovados) == 0:
+        print('\n_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX_\n')
         print('Nenhum aprovado!')
-        print('\n________________________________________________________________________________________________________________________________________\n')
+        print('\n_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX_\n')
     else:
         # Exibe os candidatos aprovados
+            print('\n________________________________________________________________________________________________________________________________________\n')
         for ap in listaAprovados:
             print('\n________________________________________________________________________________________________________________________________________\n')
 
@@ -31,7 +33,7 @@ def aprovados(criterios, candidato):
 def obterNota(rotulo):
     while True:
         try:
-            nota = int(input(f'Digite a nota {rotulo}: '))
+            nota = int(input(f'Digite a nota do Canditato(a) abaixo: {rotulo}: '))
             return nota
         except ValueError:
             print('\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Atenção !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n')

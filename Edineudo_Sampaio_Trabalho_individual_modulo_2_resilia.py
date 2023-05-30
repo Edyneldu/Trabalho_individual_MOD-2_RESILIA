@@ -11,7 +11,6 @@ def listaCandidato(candidato):
         print('\n________________________________________________________________________________________________________________________________________\n')
         print(f'{i+1}° Candidato: e{c[0]}_t{c[1]}_p{c[2]}_s{c[3]}')
         print('\n________________________________________________________________________________________________________________________________________\n')
-
 # Função para exibir os candidatos aprovados
 def aprovados(criterios, candidato):
     # Lista para armazenar os candidatos aprovados
@@ -27,6 +26,7 @@ def aprovados(criterios, candidato):
         # Exibe os candidatos aprovados
         print('\n________________________________________________________________________________________________________________________________________\n')
         for ap in listaAprovados:
+            print(f'{ap[:13]:.<18}{ap[13:]}')
             print('\n________________________________________________________________________________________________________________________________________\n')
 
 # Função para obter uma nota digitada pelo usuário

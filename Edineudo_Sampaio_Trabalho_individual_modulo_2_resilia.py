@@ -1,11 +1,13 @@
 # Função para exibir um título
 def titulo(msg):
+    Print('\n________________________________________________________________________________________________________________________________________\n')
     print(msg)
 
 # Função para exibir a lista de candidatos
 def listaCandidato(candidato):
     titulo('Lista de Candidatos:')
     for i, c in enumerate(candidato):
+        Print('\n________________________________________________________________________________________________________________________________________\n')
         print(f'{i+1}° Candidato: e{c[0]}_t{c[1]}_p{c[2]}_s{c[3]}')
 
 # Função para exibir os candidatos aprovados
@@ -16,10 +18,12 @@ def aprovados(criterios, candidato):
     titulo('Aprovados:')
     # Verifica se não há candidatos aprovados
     if len(listaAprovados) == 0:
+        Print('\n________________________________________________________________________________________________________________________________________\n')
         print('Nenhum aprovado!')
     else:
         # Exibe os candidatos aprovados
         for ap in listaAprovados:
+            Print('\n________________________________________________________________________________________________________________________________________\n')
             print(f'{ap[:13]:.<18}{ap[13:]}')
 
 # Função para obter uma nota digitada pelo usuário
@@ -29,6 +33,7 @@ def obterNota(rotulo):
             nota = int(input(f'Digite a nota {rotulo}: '))
             return nota
         except ValueError:
+            Print('\n________________________________________________________________________________________________________________________________________\n')
             print('Por favor, digite um número válido.')
 
 # Função para obter a resposta do usuário (s/n)
@@ -38,6 +43,7 @@ def obterResposta():
         if resposta == 's' or resposta == 'n':
             return resposta
         else:
+            Print('\n________________________________________________________________________________________________________________________________________\n')
             print('Por favor, digite uma resposta válida (s/n).')
 
 # Lista para armazenar os candidatos
@@ -50,7 +56,11 @@ pos = 1
 titulo('Insira as notas')
 
 while True:
+    Print('\n________________________________________________________________________________________________________________________________________\n')
     print(f'{pos}° Candidato:')
+    Print('\n________________________________________________________________________________________________________________________________________\n')
+    Print('\n_________________________________________________ FIM ________________________________________________________________________________\n')
+    Print('\n________________________________________________________________________________________________________________________________________\n')
     # Obtém as notas do candidato
     notas = [obterNota(rotulo) for rotulo in ['Entrevista', 'Teste Teórico', 'Teste Prático', 'Soft Skill']]
     candidato.append(notas)
@@ -73,4 +83,4 @@ listaCandidato(candidato)
 # Verifica e exibe os candidatos aprovados
 aprovados(criterios, candidato)
 
-#º2023 Edineudo Sampaio - Resília
+#°2023 - Edineudo Sampaio - Resília/iFood

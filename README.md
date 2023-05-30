@@ -44,4 +44,4 @@ O programa segue o seguinte fluxo:
 
 Este programa é uma ferramenta simples para avaliar candidatos com base em critérios de avaliação. Ele pode ser facilmente adaptado para adicionar novos critérios ou funcionalidades, se necessário. Sinta-se à vontade para utilizar e modificar este código de acordo com suas necessidades.
 
-°###2023 - Edineudo Sampaio
+###°2023 - Edineudo Sampaio

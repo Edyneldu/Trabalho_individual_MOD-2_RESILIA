@@ -4,7 +4,7 @@
  Edineudo Sampaio - SA
 
 
-##### Avaliação de Candidatos
+### Avaliação de Candidatos
 
 Este é um programa simples para avaliar candidatos com base em notas atribuídas a eles. O programa solicita notas para diferentes critérios de avaliação e, em seguida, determina quais candidatos atendem aos critérios e os exibe como candidatos aprovados.
 

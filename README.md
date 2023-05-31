@@ -32,7 +32,7 @@ O programa segue o seguinte fluxo:
 
 3. Exibição dos resultados:
    - 3.1_ Exibe a lista de candidatos com suas respectivas notas.
-   - 3.1_ Determina quais candidatos atendem a todos os critérios e os exibe como candidatos aprovados.
+   - 3.2_ Determina quais candidatos atendem a todos os critérios e os exibe como candidatos aprovados.
 
 ## Como Usar o Programa
 
